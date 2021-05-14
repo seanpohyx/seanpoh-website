@@ -1,0 +1,14 @@
+body{
+	background-color: #1f1f1f;
+	color: #adadad;
+}
+
+.navbar-nav.navbar-center {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #adadad;
+}
