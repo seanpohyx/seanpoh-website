@@ -7,43 +7,172 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/font-style.css">
 
     <title>Sean's portfolio</title>
   </head>
   <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fs-3 font-bebas-regular p-5 m-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sean Poh</a>
+        <a class="navbar-brand fs-3" href="#">Sean Poh</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav navbar-nav navbar-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#AboutMe">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Get In Touch</a>
+              <a class="nav-link" href="#ContactMe">Get In Touch</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <!-- main intro -->
+    <!-- main intro -->
+    <div class="container mt-4 pt-5 pb-5"> 
+      <div class="row justify-content-md-center">
+          <div>
+            <pre id="welcome-text" class="font-courier-new colour-orange text-center">if user is human:<br>      print('Welcome!')</pre>
+          </div>
+      </div>
     </div>
+    <!-- <div class="container mt-4 pt-5 pb-5"> 
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <div>
+            <h1 class="font-courier-new colour-orange fs-50">Hello<br>Everyone</h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="vert-center">
+            <p class="font-hel">Welcome to my humble profile! I am a Computer Science Student studying in NTU. I specialises in Data Science.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+      <!-- Projects Title -->
+    <div id="Projects"class="container mt-4 pt-5"> 
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <div class="text-center">
+            <ul>
+              <li>
+                <div class="underline"><p id="sw_proj_btn" class="font-bebas-regular active">Software Projects</p></div>
+              </li>
+              <li>
+                <div class="underline"><p id="ml_proj_btn" class="font-bebas-regular">Data Science Projects</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Project_container" class="container mt-4 mb-4 overflow-hidden"> 
+      <div id="spinner" class="text-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div id="Sw_project_content" class="row">
+        <!-- <div class="col-md-4">
+          <div class="card background-color-transparent">
+            <img class="card-img-top p-3" src="https://miro.medium.com/max/3200/1*xdo0UBpyszvD7-7EH4TkIA.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title font-bebas-regular fs-20">Exam HQ backend</h5>
+              <p class="card-text font-hel font-15">This project is inspire by the needs of NTU students to pray for one another.</p>
+              <a href="#" class="btn btn-primary font-hel fs-15"> <i class="bi bi-github"></i> Github</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div id="Ml_project_content" class="row d-none">
+        <!-- <div class="col-md-4">
+          <div class="card background-color-transparent">
+            <img class="card-img-top p-3" src="https://miro.medium.com/max/3200/1*xdo0UBpyszvD7-7EH4TkIA.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title font-bebas-regular fs-20">Exam HQ backend</h5>
+              <p class="card-text font-hel font-15">This project is inspire by the needs of NTU students to pray for one another.</p>
+              <a href="#" class="btn btn-primary font-hel fs-15"> <i class="bi bi-github"></i> Github</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <div id="loadMoreBtn" class="btn btn-primary font-hel fs-15">Load More</div>
+    </div>
+
+    <!-- About me -->
+    <div id="AboutMe" class="container mt-4 pt-5 pb-5"> 
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <div>
+            <h1 class="font-bebas-regular fs-50">About Me</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <img src="./assets/images/profile.jpg" alt="my profile" width="300px" class="pb-4">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <p class="font-hel"><span class="fs-15">Hi there!</span> <br> I am Sean Poh. I am currently studying at Nanyang Technological University pursuing a Bachelor's degree in Computer Science with machine learning as my specialisation. I love learning and have always been passionate about technology. <br> Over the years, I have been developing my passion for front-end and backend in web applications. But recently, I begin to explore a new interest in machine learning, mainly in the topic of Natural Language Processing(NLP) using deep learning. I hope to be able to do more projects in the machine learning field to gain more experience and develop my passion further.</p>
+
+            <p>Here are some of the technology that I am familar with:</p>
+            <ul class="grid-list">
+              <li>HTML/ CSS</li>
+              <li>JQuery</li>
+              <li>Bootstrap</li>
+              <li>NodeJS</li>
+              <li>Flask</li>
+              <li>Keras</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact me -->
+    <div id="ContactMe" class="container mt-4 pt-5 pb-5"> 
+      <div class="row justify-content-md-center text-center">
+        <div class="col">
+          <ul>
+            <li><h4 class="font-bebas-regular font">Get In Touch</h4></li>
+            <li><p class="font-hel">seanpohyx@gmail.com</p></li>
+          </ul>
+        </div>
+        <div class="col">
+          <a href="https://github.com/seanpohyx" class="fs-20 p-4"> <i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/poh-ying-xuan/" class="fs-20 p-4"> <i class="bi bi-linkedin"></i></a>
+        </div>
+
+        
+      </div>
+    </div>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha384-S58meLBGKxIiQmJ/pJ8ilvFUcGcqgla+mWH9EEKGm6i6rKxSTA2kpXJQJ8n7XK4w" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./static/script.js?version=1.00"></script>
+    <script type="text/javascript" src="./assets/projects.js?version=1.00"></script>
   
   </body>
 </html>

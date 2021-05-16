@@ -1,14 +1,177 @@
+/* On screens that are greater than or equal to 320 apply this */
+@media only screen and (min-width: 320px) {
+	#welcome-text{
+		font-size: 15pt;
+	}
+
+	#sw_proj_btn{
+		font-size: 15pt;
+	}
+
+	#ml_proj_btn{
+		font-size: 15pt;
+	}
+}
+
+/* On screens that are greater than or equal to 400 apply this */
+@media only screen and (min-width: 400px) {
+	#welcome-text{
+		font-size: 20pt;
+	}
+
+	#sw_proj_btn{
+		font-size: 16pt;
+	}
+
+	#ml_proj_btn{
+		font-size: 16pt;
+	}
+}
+
+/* On screens that are greater than or equal to 700 apply this */
+@media only screen and (min-width: 700px) {
+	#sw_proj_btn{
+		font-size: 20pt;
+	}
+
+	#ml_proj_btn{
+		font-size: 20pt;
+	}
+}
+
+/* On screens that are greater than or equal to 400 apply this */
+@media only screen and (min-width: 992px) {
+	#welcome-text{
+		font-size: 30pt;
+	}
+
+	.navbar-nav.navbar-center {
+		position: absolute;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+}
+
+/*/* On screens that are greater than or equal to 400 apply this 
+@media only screen and (min-width: 1382px) {
+	#welcome-text{
+		font-size: 30pt;
+	}
+
+	#sw_proj_btn{
+		font-size: 20pt;
+	}
+
+	#ml_proj_btn{
+		font-size: 20pt;
+	}
+
+	.navbar-nav.navbar-center {
+		position: absolute;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+}
+*/
 body{
 	background-color: #1f1f1f;
 	color: #adadad;
 }
 
-.navbar-nav.navbar-center {
-	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
+a:link, a:visited, a:active{
+  color: #adadad;
+}
+
+a:hover {
+  color: #ea8537;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.font-bebas-regular{ font-family: bebasNeue-regular;}
+.font-hel{ font-family: helvetica;}
+.font-cn{ font-family: courier-new; }
+.fs-15{ font-size: 15pt; }
+.fs-20{ font-size: 20pt; }
+.fs-30{ font-size: 30pt; }
+.fs-35{ font-size: 35pt; }
+.fs-40{ font-size: 40pt; }
+.fs-50{ font-size: 50pt; }
+.margin-auto{ margin: auto;}
+.colour-orange{color:#ea8537;}
+.padding-btm-61{padding-bottom: 61px;}
+
+.navbar-dark .navbar-brand {
+    color: #ea8537;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: #adadad;
 }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ea8537;
+}
+
+.vert-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+}
+
+.underline .active{
+	border-bottom: solid 2px #ea8537;
+}
+
+#Projects ul {
+	list-style: none;
+	padding: 0;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#Projects li {
+	float:left;
+	width:50%;
+}
+
+#ContactMe ul {
+	list-style: none;
+	padding: 0;
+}
+
+
+.btn{
+	border-radius: 0;
+}
+
+.btn-primary {
+    color: #adadad;
+    background-color: transparent; 
+    border-color: #adadad; 
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #ea8537;
+    background-color: transparent;
+    border-color: #ea8537; /*set the color you want here*/
+}
+
+.card{
+	border-radius: 0;
+	background-color: #2a2a2a;
+	min-height: 300px;
+}
+
+.card-footer {
+    border-top: none;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: helvetica;
+  src: url(../assets/fonts/Helvetica/Helvetica.ttc);
+}
+
+@font-face {
+  font-family: bebasNeue-regular;
+  src: url(../assets/fonts/BebasNeue/BebasNeue_Regular.otf);
+}
+
+@font-face {
+  font-family: bebasNeue-book;
+  src: url(../assets/fonts/BebasNeue/BebasNeue_Book.otf);
+}
+
+@font-face {
+  font-family: bebasNeue-bold;
+  src: url(../assets/fonts/BebasNeue/BebasNeue_Bold.otf);
+}
+
+@font-face {
+  font-family: courier-new;
+  src: url(../assets/fonts/CourierNew/Courier_New.ttf);
+}
