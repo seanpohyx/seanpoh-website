@@ -64,6 +64,10 @@ $( document ).ready(function() {
 	    }, 250);
 	});
 
+	setTimeout(function() {
+        $(document).trigger('afterready');
+    }, 200);
+
 
 });
 
@@ -115,11 +119,6 @@ function generateProjects(){
 	$('#Ml_project_content').html(content);
 
 	spinner_toggle(false);
-
-	setTimeout(function() {
-        $(document).trigger('afterready');
-    }, 100);
-
 }
 
 function adjustProjectContainer(project, isShow){
