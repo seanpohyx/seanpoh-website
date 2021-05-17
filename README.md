@@ -1,2 +1,5 @@
-# Sean-portfolio
- This would be my github pages for my portfolio to contain all my works. 
+# Sean portfolio
+
+This repo contains my portfolio for my work
+
+visit at www.seanpoh.com 
