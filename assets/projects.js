@@ -1,11 +1,4 @@
 var sw_projects = [
-
-  {
-  	"title": "Movie Booking System",
-  	"desc": "A complete backend API movie booking system using the SpringBoot framework and PostgreSQL. Testing done with Junit and BDDMockito.", 
-  	"href": "https://github.com/seanpohyx/movie-booking-system", 
-  	"img": "./assets/images/springboot.jpg"
-  },
   {
   	"title": "HopeUni-Testimony",
   	"desc": "This project is constructed for my church community. I created a platform that allowed for people to share their testimony and encouragements to one other during the exam period. Currently taken down to improve it further.", 
@@ -47,8 +40,13 @@ var sw_projects = [
   	"desc": "Creating a queuing mobile application, using the Flutter Library, for private clinics to encourage social distancing in a post-covid world.", 
   	"href": "https://github.com/mingjunsiek/clinic_q", 
   	"img": "./assets/images/clinic_q.jpg"
-  }
-
+  },
+  {
+	"title": "Movie Booking System",
+	"desc": "A complete backend API movie booking system using the SpringBoot framework and PostgreSQL. Testing done with Junit and BDDMockito.", 
+	"href": "https://github.com/seanpohyx/movie-booking-system", 
+	"img": "./assets/images/springboot.jpg"
+   }
 ]
 
 var ml_projects = [
